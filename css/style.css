@@ -1,6 +1,3 @@
-body{
-}
-
 /**
 
   Icons:
@@ -9,85 +6,122 @@ body{
 
 **/
 
-#header {
-  padding:30px 0 0;
+@media only screen {
+  #header {
+    padding:30px 0 0;
+  }
+
+  #header h1 {
+    color: #F00;
+    font-size: 4em;
+    margin: 0;
+  }
+
+  #header h2 {
+    color: #000080;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin-bottom: 50px;
+  }
+
+  #details {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding:25px 0;
+  }
+
+  #details #date {
+    text-align: right;
+  }
+
+  #details #date span {
+    background: url('../images/calendar.png') left center no-repeat;
+    color: #666;
+    padding: 5px 0 5px 35px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  #details #location {
+    text-align: left;
+  }
+
+  #details #location span {
+    background: url('../images/marker.png') left center no-repeat;
+    color: #666;
+    padding: 5px 0px 5px 32px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  #benefits {
+    padding:30px 0 0;
+  }
+
+  .benefit {
+    background-position: 50% top;
+    background-repeat: no-repeat;
+    color: #999;
+    padding:70px 20px 30px 20px;
+  }
+
+  .benefit h3 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+
+  .benefit ul {
+    list-style-type: none;
+    margin:0;
+    text-align: center;
+  }
+
+  .benefit ul li {
+    line-height: 170%;
+  }
+
+  #learn-fast {
+    background-image: url('../images/benefit-1.png');
+  }
+  #real-app {
+    background-image: url('../images/benefit-2.png');
+  }
+  #ask-questions {
+    background-image: url('../images/benefit-3.png');
+  }
+
+  #apply {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+  }
+
+  #apply .button {
+    margin-bottom: 0;
+  }
 }
 
-#header h1 {
-  color: #F00;
-  font-size: 4em;
-  margin: 0;
-}
+@media only screen and (max-width: 768px) {
 
-#header h2 {
-  color: #000080;
-  font-size: 1.8em;
-  line-height: 1.2em;
-  margin-bottom: 50px;
-}
+  .benefit {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 
-#details {
-  background-color: rgba(0, 0, 0, 0.05);
-  padding:25px 0;
-}
-#details #date {
-  background: url('../images/calendar.png') left center no-repeat;
-  color: #666;
-  padding: 5px 0 5px 35px;
-  font-size: 20px;
-}
+  }
 
-#details #location {
-  background: url('../images/marker.png') left center no-repeat;
-  color: #666;
-  padding: 5px 0px 5px 32px;
-  font-size: 20px;
-}
+  .benefit:last-child {
+    border-bottom: none;
+  }
 
-#benefits {
-  padding:30px 0 30px;
-}
+  #details #date {
+    text-align: center;
+    margin-bottom:20px;
+  }
 
-.benefit {
-  background-position: 50% top;
-  background-repeat: no-repeat;
-  color: #999;
-  padding:70px 20px 0px 20px;
-}
+  #details #location {
+    text-align: center;
+  }
 
-.benefit h3 {
-  color: black;
-  margin-bottom: 20px;
-  font-size: 1.2em;
-  text-align: center;
 }
-
-
-.benefit ul {
-  list-style-type: none;
-  margin:0;
-  text-align: center;
-}
-
-.benefit ul li {
-  line-height: 170%;
-}
-
-#learn-fast {
-  background-image: url('../images/benefit-1.png');
-}
-#real-app {
-  background-image: url('../images/benefit-2.png');
-}
-#ask-questions {
-  background-image: url('../images/benefit-3.png');
-}
-
-#apply {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 30px 0;
-}
-
-#apply .button {
-  margin-bottom: 0;
-}  
