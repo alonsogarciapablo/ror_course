@@ -58,6 +58,10 @@ body{
   font-size: 1.2em;
 }
 
+.benefit p {
+  color: #999;
+}
+
 #learn-fast {
   background-image: url('../images/benefit-1.png');
 }
