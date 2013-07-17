@@ -8,6 +8,14 @@
   <title>Ruby on Rails 4 Course. San Francisco Bay Area, November 2013</title>
   <link rel="stylesheet" href="css/foundation.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+  <script type='text/javascript'>
+    $(function(){
+      $('#apply').click(function(){
+        ga('send', 'event', 'button', 'click', "I'm interested");
+      })
+    })
+  </script>
 </head>
 <body>
 
@@ -68,7 +76,7 @@
   <div id="apply">
     <div class="row">
       <div class="large-8 large-offset-2 columns text-center">
-        <a href="https://docs.google.com/forms/d/12yQt_x7STrRTqMKv9Ey1kfjX9qDErMdb61LLew_pIzw/viewform" target="_blank" class="large button expand radius">I'm interested</a>
+        <a href="https://docs.google.com/forms/d/12yQt_x7STrRTqMKv9Ey1kfjX9qDErMdb61LLew_pIzw/viewform" target="_blank" class="large button expand radius" id='apply'>I'm interested</a>
       </div>
     </div>
   </div>
@@ -81,7 +89,6 @@
 
     ga('create', 'UA-42396898-2', 'rubyonrails4course.com');
     ga('send', 'pageview');
-
   </script>
 
 </body>
